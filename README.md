@@ -57,31 +57,4 @@ Email: manushigaanbu@gmail.com
 
 Phone: 8056861986
 
-📜 Script Explanation
-js
-Copy
-Edit
-function opentab(event, tabname) {
-    document.querySelectorAll('.tab-links').forEach(tab => tab.classList.remove('active-link'));
-    document.querySelectorAll('.tab-contents').forEach(content => content.classList.remove('active-tab'));
-    event.currentTarget.classList.add('active-link');
-    document.getElementById(tabname).classList.add('active-tab');
-}
-This script handles tab switching in the About section.
-
-It:
-
-Removes the active class from all tabs and content.
-
-Adds the active class only to the clicked tab and its corresponding content.
-
-🖼️ Other Notes
-The stylesheet style.css is used for styling (not shown here).
-
-Font Awesome is used for icons (<i class="fas ...">).
-
-It's likely designed to be mobile responsive thanks to the menu toggle icons (fa-bars and fa-times).
-
-If you'd like help improving or expanding it
-
 
