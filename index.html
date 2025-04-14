@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthHive - Empowering Care, Connecting Lives</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="imlogoo.png" alt="HealthHive Logo" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#Bookings">Bookings</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-content">
+            <div class="header-text">
+                <p>HealthHive</p>
+                <h1>Your Health<br><span>Our Priority</span></h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- About Section -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="about.jpg" alt="About HealthHive">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About</h1>
+                <p>Access expert medical care, telehealth services, and wellness resources—all in one place. At HealthHive, we provide digital healthcare solutions tailored to your needs.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab(event, 'CareVisits')">Care Visits</p>
+                    <p class="tab-links" onclick="opentab(event, 'HealthSupport')">Health Support</p>
+                    <p class="tab-links" onclick="opentab(event, 'Emergency')">Emergency</p>
+                    <p class="tab-links" onclick="opentab(event, 'ExpertTeam')">Expert Team</p>
+                    <p class="tab-links" onclick="opentab(event, 'HealthRecords')">Health Records</p>
+                </div>
+                <div class="tab-contents active-tab" id="CareVisits">
+                    <ul>
+                        <li>Health Check-ups</li>
+                        <li>Preventive Care</li>
+                        <li>Virtual Visits</li>
+                        <li>In-Person Visits</li>
+                        <li>Experienced Team</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="HealthSupport">
+                    <ul>
+                        <li>Emergency Care</li>
+                        <li>Home Healthcare Services</li>
+                        <li>Specialty Care</li>
+                        <li>Primary Care</li>
+                        <li>Quick Appointment</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Emergency">
+                    <ul>
+                        <li>One-Tap Emergency Call</li>
+                        <li>Medical History Storage</li>
+                        <li>Location Sharing</li>
+                        <li>Telemedicine</li>
+                        <li>Mobile Medical Units</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="ExpertTeam">
+                    <ul>
+                        <li>Treatment Plans</li>
+                        <li>Psychological Support</li>
+                        <li>Multispecialty Consultations</li>
+                        <li>Critical Care Services</li>
+                        <li>Physiotherapy</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="HealthRecords">
+                    <ul>
+                        <li>Medical History Management</li>
+                        <li>Secure Data Protection</li>
+                        <li>Health Analytics & Insights</li>
+                        <li>Appointments</li>
+                        <li>Cloud-Based Storage</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Services Section -->
+<div id="Services">
+    <div class="container">
+        <h1 class="sub-title">Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-user-md"></i>
+                <h2>Consulting</h2>
+                <p>Expert guidance for healthcare organizations, improving patient care and digital transformation.</p>
+            </div>
+            <div>
+                <i class="fas fa-hospital"></i>
+                <h2>Hospitals</h2>
+                <p>Seamless healthcare access with our network of top-tier hospitals and clinics.</p>
+            </div>
+            <div>
+                <i class="fas fa-user-nurse"></i>
+                <h2>Nurse & Home Nursing</h2>
+                <p>Certified nurses providing personalized healthcare at home.</p>
+            </div>
+            <div>
+                <i class="fas fa-pills"></i>
+                <h2>Medicine</h2>
+                <p>Easy access to prescribed medications and healthcare essentials.</p>
+            </div>
+            <div>
+                <i class="fas fa-leaf"></i>
+                <h2>Ayurvedic</h2>
+                <p>Natural healing with certified Ayurvedic doctors.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bookings Section -->
+<div id="Bookings">
+    <div class="container">
+        <h1 class="sub-title">Book an Appointment</h1>
+        <form action="#" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="time">Select Time:</label>
+            <input type="time" id="time" name="time" required>
+            <label for="message">Message (Optional):</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            <button type="submit">Book Appointment</button>
+        </form>
+    </div>
+</div>
+
+<!-- Contact Section -->
+<div id="contact">
+    <div class="container">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fas fa-paper-plane"></i> manushigaanbu@gmail.com</p>
+        <p><i class="fas fa-phone"></i> 8056861986</p>
+    </div>
+</div>
+
+<script>
+    function opentab(event, tabname) {
+        document.querySelectorAll('.tab-links').forEach(tab => tab.classList.remove('active-link'));
+        document.querySelectorAll('.tab-contents').forEach(content => content.classList.remove('active-tab'));
+        event.currentTarget.classList.add('active-link');
+        document.getElementById(tabname).classList.add('active-tab');
+    }
+</script>
+</body>
+</html>
